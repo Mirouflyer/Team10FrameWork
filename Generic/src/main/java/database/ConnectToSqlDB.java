@@ -21,9 +21,9 @@ public class ConnectToSqlDB {
 
 
     //This method is used to get  the propperties from secret.properties file (driver url,database name ,username, password)
-    public static Properties loadProperties() throws IOException {
+    public static Properties loadProperties(String filePath) throws IOException {
         Properties prop = new Properties();
-        InputStream ism = new FileInputStream("/Users/mirouflyer/mirou-workspace/ThirdAutomationTest/Generic/src/secret.properties");
+        InputStream ism = new FileInputStream(filePath);
         prop.load(ism);
         ism.close();
         return prop;
@@ -32,8 +32,8 @@ public class ConnectToSqlDB {
     //*****************************************//
 
    // This method is used to connect to  MYSQL databases.
-    public static Connection connectToSqlDatabase() throws IOException, SQLException, ClassNotFoundException {
-        Properties prop = loadProperties();
+    public static Connection connectToSqlDatabase(String filePath) throws IOException, SQLException, ClassNotFoundException {
+        Properties prop = loadProperties(filePath);
         String driverClass = prop.getProperty("MYSQLJDBC.driver");
         String url = prop.getProperty("MYSQLJDBC.url");
         String userName = prop.getProperty("MYSQLJDBC.userName");
@@ -49,11 +49,11 @@ public class ConnectToSqlDB {
 
 
     // this method is used to read from MYSQL databases.
-    public List<String> readDataBase(String tableName, String columnName) throws Exception {
+    public List<String> readDataBase(String tableName, String columnName,String filePath) throws Exception {
         List<String> data = new ArrayList<String>();
 
         try {
-            connectToSqlDatabase();
+            connectToSqlDatabase(filePath);
             statement = connect.createStatement();
             resultSet = statement.executeQuery("select * from " + tableName);
             data = getResultSetData(resultSet, columnName);
@@ -93,9 +93,9 @@ public class ConnectToSqlDB {
 
 
     //This method is used to insert data to MYSQL databases.
-    public void insertDataFromArrayListToSqlTable(List<String> list, String tableName, String columnName) {
+    public void insertDataFromArrayListToSqlTable(List<String> list, String tableName, String columnName, String filePath) {
         try {
-            connectToSqlDatabase();
+            connectToSqlDatabase(filePath);
             ps = connect.prepareStatement("DROP TABLE IF EXISTS `" + tableName + "`;");
             ps.executeUpdate();
             ps = connect.prepareStatement("CREATE TABLE `" + tableName + "` (`items` VARCHAR(255) NOT NULL );");
