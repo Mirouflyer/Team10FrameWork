@@ -113,7 +113,7 @@ public class CommonAPI {
         driver.findElement(By.id(locator)).sendKeys(value);
     }
 
-    //TypeByName
+    //TypeByClassName
     public void typeOnClassName(String locator, String value) {
         driver.findElement(By.className(locator)).sendKeys(value);
     }
@@ -121,6 +121,11 @@ public class CommonAPI {
     //TypeByCss
     public void typeOnCss(String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value);
+    }
+
+    //TypeByXpath
+    public void typeOnXpath(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value);
     }
 
     //TypeOnElement
@@ -149,7 +154,7 @@ public class CommonAPI {
         driver.findElement(By.id(locator)).sendKeys(value,Keys.ENTER);
     }
 
-    //TypeByName
+    //TypeByClassName
     public void typeOnClassNameAndEnter(String locator, String value) {
         driver.findElement(By.className(locator)).sendKeys(value,Keys.ENTER);
     }
@@ -159,7 +164,12 @@ public class CommonAPI {
         driver.findElement(By.cssSelector(locator)).sendKeys(value,Keys.ENTER);
     }
 
-    //TypeOnElementAndEnter
+    //TypeByXpath
+    public void typeOnXpathAndEnter(String locator, String value) {
+        driver.findElement(By.xpath(locator)).sendKeys(value,Keys.ENTER);
+    }
+
+    //TypeOnElement
     public static void typeOnElementNEnter(String locator, String value) {
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
@@ -199,14 +209,22 @@ public class CommonAPI {
         driver.findElement(By.cssSelector(locator)).click();
     }
 
+    //ClickByElement
     public void clickOnElement(String locator) {
         try {
             driver.findElement(By.cssSelector(locator)).click();
         } catch (Exception ex1) {
             try {
-                driver.findElement(By.xpath(locator)).click();
+                System.out.println("First Attempt was not successful");
+                driver.findElement(By.name(locator)).click();
             } catch (Exception ex2) {
-                driver.findElement(By.id(locator)).click();
+                try {
+                    System.out.println("Second Attempt was not successful");
+                    driver.findElement(By.xpath(locator)).click();
+                } catch (Exception ex3) {
+                    System.out.println("Third Attempt was not successful");
+                    driver.findElement(By.id(locator)).click();
+                }
             }
         }
     }
