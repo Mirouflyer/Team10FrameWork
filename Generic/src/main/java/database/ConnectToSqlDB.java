@@ -98,7 +98,7 @@ public class ConnectToSqlDB {
             connectToSqlDatabase(filePath);
             ps = connect.prepareStatement("DROP TABLE IF EXISTS `" + tableName + "`;");
             ps.executeUpdate();
-            ps = connect.prepareStatement("CREATE TABLE `" + tableName + "` (`items` VARCHAR(255) NOT NULL );");
+            ps = connect.prepareStatement("CREATE TABLE `" + tableName + "` (`items` VARCHAR(1000) NOT NULL );");
             ;
             ps.executeUpdate();
             for (String st : list) {

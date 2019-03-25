@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataBase {
-    public static String filePath = "../Walmart/src/test/resources/secrect.properties";
+    public static String filePath = "/Users/mirouflyer/Desktop/teamframework/Team10FrameWorkTest/Walmart/src/test/resources/secret.properties";
     static ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
     public static void insertDataInDB(){
         List<String> list = getItemValue();
