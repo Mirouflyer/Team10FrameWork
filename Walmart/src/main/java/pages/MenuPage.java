@@ -13,7 +13,7 @@ public class MenuPage {
 
     public static void readMenuText(WebDriver driver1) throws  Exception, IOException, SQLException, ClassNotFoundException {
         List<String> actualData = new ArrayList<String>();
-        List<String> listOfMenu = CommonAPI.getTextFromWebElements("#listboxActive");
+        List<String> listOfMenu = CommonAPI.getTextFromWebElements("#SearchDropdown-list");
         System.out.println("List of Walmar Menu from the Website of Walmart:");
         for(String data:listOfMenu){
             System.out.println(data);
