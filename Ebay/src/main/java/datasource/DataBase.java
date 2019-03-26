@@ -39,13 +39,12 @@ public class DataBase {
     }
 
     public static void main(String[] args) throws Exception, IOException, SQLException, ClassNotFoundException {
-       // insertDataIntoDB();
+        insertDataIntoDB();
         ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
         List<String> list = connectToSqlDB.readDataBase("ItemList", "items", filePath);
         for (String st : list) {
             System.out.println(st);
         }
-
     }
 }
 

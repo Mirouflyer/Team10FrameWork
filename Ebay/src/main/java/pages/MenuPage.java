@@ -29,6 +29,6 @@ public class MenuPage {
             System.out.println(data);
         }
         List<String> menuData = new ArrayList<>();
-        Assert.assertEquals(menuData,actualData);
+        Assert.assertEquals(listOfMenu,actualData);
     }
 }
