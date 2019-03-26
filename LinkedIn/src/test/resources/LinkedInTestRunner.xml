@@ -17,7 +17,8 @@
             <!--<class name="homePage.TestGeneralLinks"/>          -->
             <!--<class name="homePage.TestBusinessSolutionsLinks"/>-->
             <!--<class name="homePage.TestBrowseLinkedInLinks"/>-->
-            <class name="homePage.TestDirectoriesLinks"/>
+            <!--<class name="homePage.TestDirectoriesLinks"/>-->
+            <class name="homePage.TestLinkedInC2109Links"/>
         </classes>
     </test>
 
