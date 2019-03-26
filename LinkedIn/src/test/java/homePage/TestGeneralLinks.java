@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
 
-public class TestGeneralHomePageLinks extends CommonAPI {
+public class TestGeneralLinks extends CommonAPI {
 
     @Test
     public void generalHomePageLinks() throws Exception {
