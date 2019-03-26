@@ -1,13 +1,17 @@
-package logIn;
+package logOut;
 
+//import logIn.LogInToAccount;
 import base.CommonAPI;
+import logIn.LogInPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import reporting.TestLogger;
 
-public class LogInPage extends CommonAPI   {
+import static base.CommonAPI.convertToString;
+
+public class LogOutPage extends CommonAPI {
 
     @FindBy(how = How.ID, using = "gh-ug") // SignInButton
     public static WebElement signButton;
@@ -20,6 +24,14 @@ public class LogInPage extends CommonAPI   {
 
     @FindBy(how = How.ID, using = "sgnBt")
     public static WebElement submitButtonWebElement;
+
+    LogInPage logInPage = new LogInPage();
+    @FindBy(how = How.XPATH, using = "1")
+    public static WebElement accoutNameButton; // gh-uo signout
+
+    @FindBy(how = How.XPATH, using = "//a[contains(text(),'Sign out')]")
+    public static WebElement signOutButton;
+
 
     public WebElement getClickOnSIgnButton(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
@@ -58,7 +70,27 @@ public class LogInPage extends CommonAPI   {
         getSubmitButtonWebElement().click(); // Submit the Signing
     }
 
-    public void signIn(WebDriver driver) throws InterruptedException {
+    public WebElement getClickOnAccountNameButton(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
+        return accoutNameButton;
+    }
+    public void  submitAccoutNameButton(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
+        getClickOnAccountNameButton().click(); // click on Account Name Button
+    }
+
+    public WebElement getClickOnSIgnOutButton(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
+        return accoutNameButton;
+    }
+
+    public void  submitSignOutButton(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
+        getClickOnSIgnOutButton().click(); // click on  Sign Out Button
+    }
+
+    public void signOut(WebDriver driver) throws InterruptedException {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         submitSignButton();
         submitUserName("hargasyoucef@gmail.com");
@@ -66,5 +98,8 @@ public class LogInPage extends CommonAPI   {
         Thread.sleep(2000);
         submitSignButtonWebElement();
         Thread.sleep(2000);
+        getClickOnAccountNameButton();
+        getClickOnSIgnOutButton();
+        Thread.sleep(1500);
     }
 }
