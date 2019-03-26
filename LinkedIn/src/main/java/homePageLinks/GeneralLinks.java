@@ -1,11 +1,11 @@
-package pages;
+package homePageLinks;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import reporting.TestLogger;
 
-public class GeneralHomePageLinks extends CommonAPI {
+public class GeneralLinks extends CommonAPI {
 
     @FindBy(xpath= "//a[contains(text(),'Sign Up')]")
     public static WebElement signUpButtonWebElement;
@@ -101,7 +101,7 @@ public class GeneralHomePageLinks extends CommonAPI {
         getDevelopersButtonWebElement().click();
     }
 
-    public void clickGeneralButtonTest () throws Exception {
+    public void clickGeneralButton () throws Exception {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         clickOnSignUpButtonWebElement();
         clickOnHelpCenterButtonWebElement();

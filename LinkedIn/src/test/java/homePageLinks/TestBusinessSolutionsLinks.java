@@ -6,14 +6,13 @@ import org.testng.annotations.Test;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
 
-public class TestGeneralHomePageLinks extends CommonAPI {
+public class TestBusinessSolutionsLinks extends CommonAPI {
 
     @Test
-    public void generalHomePageLinks() throws Exception {
+    public void BusinessSolutionsLinks() throws Exception{
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        GeneralLinks generalHomePageLinks = PageFactory.initElements(driver, GeneralLinks.class);
-        generalHomePageLinks.clickGeneralButton();
+        BusinessSolutionsLinks businessSolutionsLinks = PageFactory.initElements(driver,BusinessSolutionsLinks.class);
+        businessSolutionsLinks.clickBusinessSolutionsButton();
     }
-
 }
