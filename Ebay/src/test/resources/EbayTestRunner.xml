@@ -14,7 +14,6 @@
     <test name = "Amazone Home">
         <classes>
             <!--<class name="title.AmazoneHome"/>-->
-
             <!--&lt;!&ndash;<class name="search.SearchTest"/>&ndash;&gt;-->
             <!--<class name="searchPageTest.SearchTest2"/>-->
             <!--<class name="menu.MenuTest"/>-->
