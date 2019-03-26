@@ -8,16 +8,15 @@ import reporting.ApplicationLog;
 import reporting.TestLogger;
 
 import java.io.IOException;
-import java.sql.SQLException;
 
-public class TestSearchItems extends CommonAPI {
+public class TestSearchItemsFromExcel extends CommonAPI {
 
     @Test
-    public void SearchItems() throws Exception, IOException, SQLException, ClassNotFoundException {
+    public void searchItems() throws Exception, IOException, ClassNotFoundException{
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        SearchPage searchPage = PageFactory.initElements(driver, SearchPage.class);
-        searchPage.searchItemAndSubmitButton();
-        searchPage.itemFoundOnSearch("Honey");
+        SearchPage searchPage = PageFactory.initElements(driver,SearchPage.class);
+        searchPage.searchItemsAndSubmitButtonFromExcelFile();
+
     }
 }

@@ -1,6 +1,7 @@
-package homePageLinks;
+package homePage;
 
 import base.CommonAPI;
+import homePageLinks.GeneralLinks;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import reporting.ApplicationLog;

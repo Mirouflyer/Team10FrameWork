@@ -14,9 +14,10 @@
     <test name = "LinkedIn Home">
         <classes>
             <!--<class name="homePageTitle.TestHomePageTitle"/>-->
-            <class name="homePageLinks.TestGeneralHomePageLinks"/>
-            <!--<class name="homePageLinks.BusinessSolutionsLinks"/>-->
-            <!--<class name="homePageLinks.BrowseLinkedInLinks"/>-->
+            <!--<class name="homePage.TestGeneralHomePageLinks"/>-->
+            <!--<class name="homePage.TestBusinessSolutionsLinks"/>-->
+            <class name="homePage.TestBrowseLinkedInLinks"/>
+
         </classes>
     </test>
 
