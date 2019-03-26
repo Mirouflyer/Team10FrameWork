@@ -17,8 +17,8 @@
             <!--<class name="search.SearchTest"/>-->
             <!--<class name="searchItemTest.AdvancedSearchTest"></class>-->
             <!--<class name="pageTest.SearchPageTest"/>-->
-            <class name="menu.MenuTest"/>
-            <!--<class name="logInTest.SignInTest"/>-->
+            <!--<class name="menu.MenuTest"/>-->
+            <class name="logIn.TestLogIn"/>
 
         </classes>
     </test>
