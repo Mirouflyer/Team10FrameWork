@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataBase {
-    public static String filePath = "/Users/mirouflyer/Desktop/teamframework/Team10FrameWorkTest/Walmart/src/test/resources/secret.properties";
+    public static String filePath = "/Users/mirouflyer/Desktop/teamframework/Team10FrameWorkTest/Walamrt/src/test/resources/secret.properties";
     static ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
     public static void insertDataInDB(){
         List<String> list = getItemValue();
@@ -24,8 +24,8 @@ public class DataBase {
         itemList.add("Honey");
         itemList.add("Bleach");
         itemList.add("Toys");
-        itemList.add("NitendoDs");
-        itemList.add("Headset");
+//        itemList.add("NitendoDs");
+//        itemList.add("Headset");
 
         return itemList;
     }

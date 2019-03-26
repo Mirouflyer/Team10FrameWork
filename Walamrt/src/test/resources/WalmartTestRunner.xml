@@ -13,8 +13,10 @@
 
     <test name = "Walmart Home">
         <classes>
-        <class name="homePageTitle.VerifyHomePageTitle"/>
+        <!--<class name="homePageTitle.VerifyHomePageTitle"/>-->
         <!--<class name="menuSearch.MenuListSearchTest"/>-->
+            <class name="searchItems.TestSearchItems"/>
+            <!--<class name="searchForOneItem.TestsearchOneItem"/>-->
         </classes>
     </test>
 
