@@ -16,8 +16,9 @@
             <!--<class name="title.EbayHome"/>-->
             <!--<class name="search.SearchTest"/>-->
             <!--<class name="searchItemTest.AdvancedSearchTest"></class>-->
-            <class name="logOut.TestLogOut"/>
+            <class name="advancedSearch.AdvancedSearchUsingKeywords"/>
 
+            <!--<class name="logOut.TestLogOut"/>-->
             <!--&lt;!&ndash;<class name="menu.MenuTest"/>&ndash;&gt; // good-->
             <!--<class name="logIn.TestLogIn"/>-->
 
