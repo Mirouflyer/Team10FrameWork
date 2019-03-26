@@ -16,7 +16,8 @@
             <!--<class name="temporaryTest.TemporaryTests"></class>-->
             <!--<class name="testHomePage.TestClickOnWebElement"></class>-->
             <!--<class name="testHomePage.TestProductLinks"></class>-->
-            <class name="testHomePage.TestSupportLinks"></class>
+            <!--<class name="testHomePage.TestSupportLinks"></class>-->
+            <class name="testHomePage.TestAboutLinks"></class>
 
 
         </classes>
