@@ -10,10 +10,10 @@ public class TemporaryTests extends CommonAPI {
     public void locatorTests(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
 
-        //driver.findElement(By.id("navtest-b-l1-signin"));
-        driver.findElement(By.className("section.gitncallout-row"));
-      //driver.findElement(By.cssSelector("c1-button blue"));
-//        driver.findElement(By.xpath(""));
+       // driver.findElement(By.id("no-acct-pw"));
+        //driver.findElement(By.className("site-footer__link"));
+      //driver.findElement(By.cssSelector("#sset-link.setUpAccess"));
+         driver.findElement(By.xpath("//*[@lazy-load-src='/assets/compass/contentful/1h6lncjoeq27/Q9ZhrJhcaYUQAQOiACigA/f146f5f47085d29a03081ef84f4cd60e/icon-360-money-market.png']"));
 
     }
 }
