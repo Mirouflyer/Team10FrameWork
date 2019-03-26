@@ -7,15 +7,16 @@
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="Sierra"/>
-    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserName" value="firefox"/>
     <parameter name="browserVersion" value="30.0"/>
     <parameter name="url" value="https://www.capitalone.com/"/>
 
     <test name = "CapitalOne Home">
         <classes>
-
-            <!--<class name="title.TitleSearch"/>-->
-            <class name="temporaryTest.TemporaryTests"></class>
+            <!--<class name="temporaryTest.TemporaryTests"></class>-->
+            <!--<class name="testHomePage.TestClickOnWebElement"></class>-->
+            <!--<class name="testHomePage.TestProductLinks"></class>-->
+            <class name="testHomePage.TestSupportLinks"></class>
 
 
         </classes>
