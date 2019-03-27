@@ -10,9 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
          <module>Generic</module>
-         <module>LinkedIn</module>
-         <module>Walamrt</module>
-        <module>CapitalOne</module>
+         <module>CapitalOne</module>
         <module>CNN</module>     
     </modules>
 
