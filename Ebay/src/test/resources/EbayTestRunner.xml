@@ -13,20 +13,21 @@
 
     <test name = "#ebay Home">
         <classes>
-            <!--<class name="title.EbayHome"/>-->
+
             <!--<class name="search.SearchTest"/>-->
             <!--<class name="searchItemTest.AdvancedSearchTest"></class>-->
-            <class name="advancedSearch.TestLocationOption"/>
 
-            <class name="advancedSearch.TestShowResults"/>
-            <class name="advancedSearch.TestBuyingFormatsAndCondition"/>
-            <class name="advancedSearch.TestSearchByCategory"/>
-            <class name="advancedSearch.TestSearchItemByPrice"/>
-            <class name="advancedSearch.TestSearchIncludingOptions"/>
-            <class name="advancedSearch.AdvancedSearchUsingKeywords"/>
-            <class name="logOut.TestLogOut"/>
-            <class name="menu.MenuTest"/>
-            <class name="logIn.TestLogIn"/>
+            <class name="title.EbayHome"/>
+            <!--<class name="advancedSearch.TestLocationOption"/>-->
+            <!--<class name="advancedSearch.TestShowResults"/>-->
+            <!--<class name="advancedSearch.TestBuyingFormatsAndCondition"/>-->
+            <!--<class name="advancedSearch.TestSearchByCategory"/>-->
+            <!--<class name="advancedSearch.TestSearchItemByPrice"/>-->
+            <!--<class name="advancedSearch.TestSearchIncludingOptions"/>-->
+            <!--<class name="advancedSearch.AdvancedSearchUsingKeywords"/>-->
+            <!--<class name="logOut.TestLogOut"/>-->
+            <!--<class name="menu.MenuTest"/>-->
+            <!--<class name="logIn.TestLogIn"/>-->
 
         </classes>
     </test>
