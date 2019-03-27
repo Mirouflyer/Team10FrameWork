@@ -11,7 +11,7 @@
     <modules>
         <module>Generic</module>
         <module>LinkedIn</module>
-        <module>Walamrt</module>
+        <module>Walmart</module>
     </modules>
 
     <dependencyManagement>

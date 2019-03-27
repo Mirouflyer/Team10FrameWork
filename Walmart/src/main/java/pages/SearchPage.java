@@ -1,12 +1,11 @@
 package pages;
 
 import datasource.DataBase;
-import keyword.StepsTestCases;
+import keyword.ExcelReader;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.testng.Assert;
-import reporting.ApplicationLog;
 import reporting.TestLogger;
 
 import java.io.IOException;
@@ -67,7 +66,7 @@ public class SearchPage {
     }
 
     public void searchItemsAndSubmitButtonFromExcelFile()throws Exception, IOException,ClassNotFoundException  {
-        StepsTestCases stepsTestCases = new StepsTestCases();
+        ExcelReader stepsTestCases = new ExcelReader();
         String [] list = stepsTestCases.getDataFromExcelFileForFeaturesChoice();
         for(int i=1; i<list.length; i++) {
             searchFor(list[i]);

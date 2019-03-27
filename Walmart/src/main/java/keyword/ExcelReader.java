@@ -5,7 +5,7 @@ import utility.DataReader;
 
 import java.io.IOException;
 
-public class StepsTestCases extends CommonAPI {
+public class ExcelReader extends CommonAPI {
 
     DataReader dr = new DataReader();
 

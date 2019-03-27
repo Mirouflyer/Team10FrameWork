@@ -19,15 +19,15 @@ public class LinkedMemberDirectory extends CommonAPI {
 
     public void clickOnLinkedMemberDirectoryWebElement()throws Exception{
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        List<WebElement> list = linkedMemberDirectoryButtons;
-        for(WebElement element:list){
-           try {
-               element.click();
+        //List<WebElement> list = linkedMemberDirectoryButtons;
+        for(WebElement element:getLinkedMemberDirectoryButtons()){
 
-           }catch(org.openqa.selenium.StaleElementReferenceException ex){
+               element.click();
+                Thread.sleep(2000);
+
               driver.navigate().back();
 
-           }
+
 
         }
     }
