@@ -17,7 +17,8 @@
             <!--<class name="search.SearchTest"/>-->
             <!--<class name="searchItemTest.AdvancedSearchTest"></class>-->
 
-            <class name="title.EbayHome"/>
+            <class name="creatAccountTest.TestRegistration"/>
+            <!--<class name="title.EbayHome"/>-->
             <!--<class name="advancedSearch.TestLocationOption"/>-->
             <!--<class name="advancedSearch.TestShowResults"/>-->
             <!--<class name="advancedSearch.TestBuyingFormatsAndCondition"/>-->
