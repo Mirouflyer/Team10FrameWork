@@ -1,6 +1,7 @@
 package pages;
 
 import datasource.DataBase;
+import datasource.ExelReader;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -66,18 +67,7 @@ public class SearchPage {
         }
     }
 
-    public void searchItemsAndSubmitButtonFromExcelFile() throws Exception, IOException, SQLException, ClassNotFoundException {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
 
-        // ToDo
-        //Read data from Excel file using Apache POI
-        List<String> list = null;
-        for (int i = 0; i < list.size(); i++) {
-            searchFor(list.get(i));
-            submitSearchButton();
-            clearInput();
-        }
-    }
     public WebElement getSearchInputField() {
         return searchInputWebElement;
     }
