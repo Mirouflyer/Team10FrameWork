@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
-import searchItem.SearchIncludingOptions;
+import advancedSearchItem.SearchIncludingOptions;
 
 public class TestSearchIncludingOptions extends CommonAPI {
     @Test

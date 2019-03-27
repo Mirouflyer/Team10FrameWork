@@ -1,19 +1,22 @@
 package advancedSearch;
 
+import advancedSearchItem.ItemFormatsAndCondition;
+import advancedSearchItem.ShowResults;
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
-import advancedSearchItem.SearchByCategory;
 
-public class TestSearchByCategory extends CommonAPI {
+import static base.CommonAPI.convertToString;
+
+public class TestShowResults extends CommonAPI {
 
     @Test
-    public void SearchItemBySelectCategory() throws Exception {
+    public void buyingFormatsTest() throws Exception {
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
-        SearchByCategory searchByCategory  = PageFactory.initElements(driver, SearchByCategory.class);
-        searchByCategory.selectAllCategories();
+        ShowResults  showResults = PageFactory.initElements(driver, ShowResults.class);
+        showResults.checkAllResultsCheckBox();
     }
 }

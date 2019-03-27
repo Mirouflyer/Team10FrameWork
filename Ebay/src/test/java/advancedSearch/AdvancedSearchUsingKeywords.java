@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
-import searchItem.AdvancedSearch;
+import advancedSearchItem.AdvancedSearch;
 
 public class AdvancedSearchUsingKeywords extends CommonAPI {
    @Test
