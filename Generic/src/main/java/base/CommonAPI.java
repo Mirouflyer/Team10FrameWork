@@ -273,7 +273,7 @@ public class CommonAPI {
 
     //ClickByXpath
     public void clickOnXpath(String locator) {
-        driver.findElement(By.cssSelector(locator)).click();
+        driver.findElement(By.xpath(locator)).click();
     }
 
     //ClickByElement

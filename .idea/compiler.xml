@@ -8,8 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Ebay" />
         <module name="Generic" />
+        <module name="LinkedIn" />
         <module name="Walmart" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Walmart" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
