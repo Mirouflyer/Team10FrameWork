@@ -9,7 +9,7 @@ import static base.CommonAPI.convertToString;
 
 public class SignUp {
 
-    @FindBy(how = How.XPATH, using = "//span[@id='gh-ug-flex']")
+    @FindBy(how = How.XPATH, using = "//a[contains(text(),'register')]")
     public static WebElement registerButton;
 
     @FindBy(how = How.ID, using = "firstname_r")
