@@ -13,11 +13,12 @@
 
     <test name = "CNN Home">
         <classes>
-            <!--<class name="temporaryTest.TemporaryTests"></class>-->
-            <class name="testHomePage.TestBigTitles"></class>
-            <class name="testHomePage.TestTitle"></class>
-            <class name="testHomePage.TestHpWebElements"></class>
 
+            <!--<class name="testHomePage.TestBigTitles"></class>-->
+            <!--<class name="testHomePage.TestTitle"></class>-->
+            <!--<class name="testHomePage.TestHpWebElements"></class>-->
+            <!--<class name="testHomePage.TestListOfWebElements"></class>-->
+            <class name="testMenu.TestCnnMenu"></class>
         </classes>
     </test>
 

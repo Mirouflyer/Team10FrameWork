@@ -13,14 +13,14 @@
 
     <test name = "CapitalOne Home">
         <classes>
-            <!--<class name="temporaryTest.TemporaryTests"></class>-->
-            <!--<class name="testHomePage.TestClickOnWebElement"></class>-->
-            <!--<class name="testHomePage.TestProductLinks"></class>-->
-            <!--<class name="testHomePage.TestSupportLinks"></class>-->
-            <!--<class name="testHomePage.TestAboutLinks"></class>-->
-            <!--<class name="testHomePage.TestOnTheGo"></class>-->
-            <!--<class name="testSignIn.TestLogIn"></class>-->
-            <!--<class name="testHomePage.TestTitle"></class>-->
+            <class name="temporaryTest.TemporaryTests"></class>
+            <class name="testHomePage.TestClickOnWebElement"></class>
+            <class name="testHomePage.TestProductLinks"></class>
+            <class name="testHomePage.TestSupportLinks"></class>
+            <class name="testHomePage.TestAboutLinks"></class>
+            <class name="testHomePage.TestOnTheGo"></class>
+            <class name="testSignIn.TestLogIn"></class>
+            <class name="testHomePage.TestTitle"></class>
             <class name="testAccessToAccount.TestOnLineAccess"></class>
 
         </classes>
