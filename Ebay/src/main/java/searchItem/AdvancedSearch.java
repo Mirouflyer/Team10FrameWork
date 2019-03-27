@@ -11,11 +11,8 @@ import reporting.TestLogger;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class AdvancedSearch extends CommonAPI {
- //  String practicePageUrl = "https://www.ebay.com/sch/ebayadvsearch";
-//    @FindBy(xpath = "//fieldset[2]//label")
-//     List<WebElement> searchIncludingBox1;
+
     @FindBy(how = How.XPATH, using = "//a[@id='gh-as-a']")
     public static WebElement advancedSearchButton;
 
@@ -84,54 +81,4 @@ public class AdvancedSearch extends CommonAPI {
         submitSearchButton();
         Thread.sleep(2000);
     }
-
-
-
-
-    //**************************************
-
-//    public void findItems() throws InterruptedException {
-//       findElementByxPath("//a[@id='gh-as-a']");
-//       Thread.sleep(1500);
-//       findElementById("_nkw", "Laptop");
-//       findElementById("_ex_kw", "hp");
-//       findElemetByID("e1-1");
-//       findElementByxPath("//button[@type='submit']");
-//       Thread.sleep(2000);
-//   }
-
-
-//    public  void  AdvancedSearchingItems() throws Exception {
-//
-//        findElementByxPath("//a[@id='gh-as-a']");
-//        List<WebElement> searchIncludingBox1 = driver.findElements(By.xpath("//fieldset[2]//label"));
-//        List<String> searchIncludingBox = new ArrayList<String>();
-//        Thread.sleep(2000);
-//        findElementById("_nkw", "Laptop");
-//        findElementById("_ex_kw", "hp");
-//        for (WebElement element : searchIncludingBox1) {
-//            String text2 = element.getText();
-//            element.click();
-//            Thread.sleep(1500);
-//            element.click();
-//            Thread.sleep(1500);
-//            searchIncludingBox.add(text2);
-//            System.out.println(text2);
-//        }
-//    }
-//    public void searchItemByPrice() throws InterruptedException {
-//        findElementByxPath("//a[@title='Advanced Search']");
-//        Thread.sleep(1500);
-//        findElementById("_nkw", "Laptop");
-//        findElementById("_ex_kw", "hp");
-//
-//        findElemetByID("_mPrRngCbx");
-//        findElementByxPath("//input[@title='Enter minimum price range value']","200");
-//        findElementByxPath("//input[@title='Enter maximum price range value']", "900");
-//        Thread.sleep(2000);
-//    }
-
 }
-
-
-

@@ -64,18 +64,4 @@ public class SearchItemByPrice {
         enterMaxPriceRange("800");
         Thread.sleep(2000);
     }
-
-
-
-
-        //        findElementByxPath("//a[@title='Advanced Search']");
-//        Thread.sleep(1500);
-//        findElementById("_nkw", "Laptop");
-//        findElementById("_ex_kw", "hp");
-//
-//        findElemetByID("_mPrRngCbx");
-//        findElementByxPath("//input[@title='Enter minimum price range value']","200");
-//        findElementByxPath("//input[@title='Enter maximum price range value']", "900");
-//        Thread.sleep(2000);
-//    }
 }

@@ -7,9 +7,6 @@ import reporting.ApplicationLog;
 import reporting.TestLogger;
 import searchItem.AdvancedSearch;
 
-//import static base.CommonAPI.convertToString;
-//import static base.CommonAPI.driver;
-
 public class AdvancedSearchUsingKeywords extends CommonAPI {
    @Test
     public void findItemByKeyWords() throws InterruptedException {

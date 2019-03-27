@@ -16,8 +16,10 @@
             <!--<class name="title.EbayHome"/>-->
             <!--<class name="search.SearchTest"/>-->
             <!--<class name="searchItemTest.AdvancedSearchTest"></class>-->
-            <class name="advancedSearch.TestSearchItemByPrice"/>
+            <class name="advancedSearch.TestBuyingFormatsAndCondition"/>
 
+            <!--<class name="advancedSearch.TestSearchByCategory"/>-->
+            <!--<class name="advancedSearch.TestSearchItemByPrice"/>-->
             <!--<class name="advancedSearch.TestSearchIncludingOptions"/>-->
             <!--<class name="advancedSearch.AdvancedSearchUsingKeywords"/>-->
             <!--<class name="logOut.TestLogOut"/>-->
