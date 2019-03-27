@@ -1,17 +1,21 @@
 package testHomePage;
 
 import base.CommonAPI;
-import org.testng.Assert;
+import homePage.BigTitles;
+import homePage.HpWebElements;
 import org.testng.annotations.Test;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
 
-public class TestTitle extends CommonAPI {
+import static base.CommonAPI.convertToString;
+
+public class TestHpWebElements extends CommonAPI {
     @Test
-    public void title(){
+    public void testBigTitles(){
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        String title = driver.getTitle();
-        Assert.assertEquals(title,"CNN - Breaking News, Latest News and Videos");
-       }
+        HpWebElements hpWebElements = new HpWebElements();
+        hpWebElements.findWebElements();
+
     }
+}
