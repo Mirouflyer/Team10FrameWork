@@ -28,6 +28,9 @@ public class AdvancedSearch extends CommonAPI {
     @FindBy(how = How.XPATH , using = "//select[@class='block']//option[@value='58058']")
     public static WebElement categoyOption;
 
+    @FindBy(how = How.ID , using = "e1-1")
+    public static WebElement submitButtonWebElement;
+
     public static WebElement getAdvancedSearchButton() {
         return advancedSearchButton;
     }
@@ -42,6 +45,10 @@ public class AdvancedSearch extends CommonAPI {
 
     public static WebElement getCategoyOption() {
         return categoyOption;
+    }
+
+    public static WebElement getSubmitButtonWebElement() {
+        return submitButtonWebElement;
     }
 
     public void selectAdvancedSearchButton(){
@@ -63,6 +70,10 @@ public class AdvancedSearch extends CommonAPI {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         getCategoyOption().click();
     }
+    public void submitSearchButton(){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
+        getSubmitButtonWebElement().click();
+    }
 
     public void advancedSearchItemByKeywords(WebDriver driver) throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
@@ -70,14 +81,15 @@ public class AdvancedSearch extends CommonAPI {
         searchForItemUsingKeywors("Computer");
         searchForItemIcncludWords("Toshiba");
         selectCategoryOption();
+        submitSearchButton();
         Thread.sleep(2000);
     }
 
 
 
-//
-//    //**************************************
-//
+
+    //**************************************
+
 //    public void findItems() throws InterruptedException {
 //       findElementByxPath("//a[@id='gh-as-a']");
 //       Thread.sleep(1500);
@@ -87,6 +99,8 @@ public class AdvancedSearch extends CommonAPI {
 //       findElementByxPath("//button[@type='submit']");
 //       Thread.sleep(2000);
 //   }
+
+
 //    public  void  AdvancedSearchingItems() throws Exception {
 //
 //        findElementByxPath("//a[@id='gh-as-a']");
