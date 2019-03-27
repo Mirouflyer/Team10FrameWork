@@ -20,7 +20,9 @@
             <!--<class name="homePage.TestDirectoriesLinks"/>-->
             <!--<class name="homePage.TestLinkedInC2109Links"/>-->
             <!--<class name="homePage.TestLinkedMemberDirectory"/>-->
-            <class name="homePage.TestFindACollegue"/>
+            <!--<class name="homePage.TestFindACollegue"/>-->
+            <!--<class name="homePage.TestForgetPassWordButton"/>-->
+            <class name="homePage.TestLanguageSelection"/>
         </classes>
     </test>
 
