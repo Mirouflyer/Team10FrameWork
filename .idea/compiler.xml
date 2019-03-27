@@ -11,8 +11,5 @@
         <module name="Generic" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="CapitalOneBank" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

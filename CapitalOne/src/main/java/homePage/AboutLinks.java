@@ -42,9 +42,7 @@ public class AboutLinks extends CommonAPI {
         return sustainability;
     }
 
-    public static WebElement getPress() {
-        return press;
-    }
+    public static WebElement getPress() { return press; }
 
     public static WebElement getInvestors() {
         return investors;
