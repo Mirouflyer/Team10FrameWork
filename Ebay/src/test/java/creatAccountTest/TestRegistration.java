@@ -9,7 +9,7 @@ import reporting.TestLogger;
 
 public class TestRegistration extends CommonAPI {
     @Test
-    public void testSignUp(){
+    public void testSignUp() throws InterruptedException {
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         SignUp signUp = PageFactory.initElements(driver, SignUp.class);
