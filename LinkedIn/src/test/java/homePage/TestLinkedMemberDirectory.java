@@ -6,7 +6,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
-import sun.rmi.rmic.iiop.PrintGenerator;
 
 public class TestLinkedMemberDirectory extends CommonAPI {
 

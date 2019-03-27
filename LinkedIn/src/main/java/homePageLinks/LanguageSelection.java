@@ -1,11 +1,9 @@
 package homePageLinks;
 
 import base.CommonAPI;
-import keyword.ExcelReader1;
+import datasource.ExcelReader1;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
-import reporting.ApplicationLog;
 import reporting.TestLogger;
 
 import java.io.IOException;

@@ -13,16 +13,17 @@
 
     <test name = "LinkedIn Home">
         <classes>
-            <!--<class name="homePageTitle.TestHomePageTitle"/>-->
-            <!--<class name="homePage.TestGeneralLinks"/>          -->
-            <!--<class name="homePage.TestBusinessSolutionsLinks"/>-->
-            <!--<class name="homePage.TestBrowseLinkedInLinks"/>-->
-            <!--<class name="homePage.TestDirectoriesLinks"/>-->
-            <!--<class name="homePage.TestLinkedInC2109Links"/>-->
+            <class name="homePageTitle.TestHomePageTitle"/>
+            <class name="homePage.TestGeneralLinks"/>
+            <class name="homePage.TestBusinessSolutionsLinks"/>
+            <class name="homePage.TestBrowseLinkedInLinks"/>
+            <class name="homePage.TestDirectoriesLinks"/>
+            <class name="homePage.TestLinkedInC2109Links"/>
             <class name="homePage.TestLinkedMemberDirectory"/>
-            <!--<class name="homePage.TestFindACollegue"/>-->
-            <!--<class name="homePage.TestForgetPassWordButton"/>-->
-            <!--<class name="homePage.TestLanguageSelection"/>-->
+            <class name="homePage.TestFindACollegue"/>
+            <class name="homePage.TestForgetPassWordButton"/>
+            <class name="homePage.TestLanguageSelection"/>
+            <class name="signIn.TestSignIn"/>
 
         </classes>
     </test>

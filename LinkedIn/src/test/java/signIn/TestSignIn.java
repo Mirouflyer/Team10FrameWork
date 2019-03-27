@@ -1,20 +1,19 @@
-package homePage;
+package signIn;
 
 import base.CommonAPI;
-import homePageLinks.BrowseLinkedInLinks;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
+import pages.SignIn;
 import reporting.ApplicationLog;
 import reporting.TestLogger;
 
-
-public class TestBrowseLinkedInLinks extends CommonAPI {
+public class TestSignIn extends CommonAPI {
 
     @Test
-    public void browseLinkedInLinks() throws Exception{
+    public void signIn(){
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        BrowseLinkedInLinks browseLinkedInLinks = PageFactory.initElements(driver,BrowseLinkedInLinks.class);
-        browseLinkedInLinks.clickOnBrowseLinkedInButton();
+        SignIn signIn = PageFactory.initElements(driver,SignIn.class);
+        signIn.signInAccount("samir_aitouarab@yahoo.fr","123456");
     }
 }
