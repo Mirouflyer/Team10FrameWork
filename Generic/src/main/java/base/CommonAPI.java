@@ -126,15 +126,15 @@ public class CommonAPI {
                 }
                 driver = new ChromeDriver();
             } else if(browserName.equalsIgnoreCase("chrome-options")){
-                ChromeOptions options = new ChromeOptions();
-                options.addArguments("--disable-notifications");
-                if(OS.equalsIgnoreCase("OS X")){
-                    System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver");
-                }else if(OS.equalsIgnoreCase("Windows")){
-                    System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver.exe");
-                }
-                driver = new ChromeDriver(options);
-            }
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-notifications");
+        if(OS.equalsIgnoreCase("OS X")){
+            System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver");
+        }else if(OS.equalsIgnoreCase("Windows")){
+            System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver.exe");
+        }
+        driver = new ChromeDriver(options);
+    }
 
             else if(browserName.equalsIgnoreCase("firefox")){
                 if(OS.equalsIgnoreCase("OS X")){
@@ -170,7 +170,7 @@ public class CommonAPI {
             return driver;
         }
 
-    @AfterMethod
+        @AfterMethod
     public void cleanUp(){
     //driver.close();
     }
