@@ -12,19 +12,19 @@ public class SignUp {
     @FindBy(how = How.XPATH, using = "//a[contains(text(),'register')]")
     public static WebElement registerButton;
 
-    @FindBy(how = How.ID, using = "firstname_r")
+    @FindBy(how = How.XPATH, using = "//input[@name='firstname']")
     public static WebElement firstName;
 
-    @FindBy(how = How.ID, using = "lastname_r")
+    @FindBy(how = How.XPATH, using = "//input[@id='lastname']")
     public static WebElement lastName;
 
-    @FindBy(how = How.ID, using = "email")
+    @FindBy(how = How.XPATH, using = "//input[@id='email']")
     public static WebElement email;
 
-    @FindBy(how = How.ID, using = "PASSWORD")
+    @FindBy(how = How.XPATH, using = "//input[@id='PASSWORD']")
     public static WebElement password;
 
-    @FindBy(how = How.ID, using = "ppaFormSbtBtn")
+    @FindBy(how = How.XPATH, using = "//button[@id='ppaFormSbtBtn']")
     public static WebElement creatAccountButton;
 
     public static WebElement getRegisterButton() {
@@ -70,17 +70,24 @@ public class SignUp {
         getEmail().sendKeys(value);
     }
 
+    public void enterPassword(String value){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
+        getPassword().sendKeys(value);
+    }
+
     public void submitCreatAccountButton(){
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         getCreatAccountButton().click();
     }
 
-    public void creatAnAccount(){
+    public void creatAnAccount() throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         submitRegisterButton();
         enterFirstName("billy");
         enterLastName("Emanuel");
         enterEmail("billyemanuel2019@gamil.com");
+        enterPassword("2255kiukL");
+        Thread.sleep(2000);
         submitCreatAccountButton();
     }
 }
