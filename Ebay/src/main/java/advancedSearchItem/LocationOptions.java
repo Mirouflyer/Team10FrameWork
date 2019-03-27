@@ -38,8 +38,7 @@ public class LocationOptions {
             String text = element.getText();
             element.click();
             Thread.sleep(2000);
-//            element.click();
-//            Thread.sleep(2000);
+
             locationParameter.add(text);
             System.out.println(text);
         }

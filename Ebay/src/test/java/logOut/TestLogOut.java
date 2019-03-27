@@ -13,12 +13,7 @@ public class TestLogOut extends CommonAPI {
     public void getSignOutFromMyAccount() throws InterruptedException {
         ApplicationLog.epicLogger();
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
-
-//        LogInPage logInPage = PageFactory.initElements(driver, LogInPage.class);
-//        logInPage.signIn(driver); }
-//
         LogOutPage logOutPage = PageFactory.initElements(driver, LogOutPage.class);
         logOutPage.signOut(driver);
-
     }
 }
