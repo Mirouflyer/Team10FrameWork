@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Ebay Automation Script " parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="Sierra"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="30.0"/>
+    <parameter name="url" value="https://ebay.com"/>
+
+    <test name = "#ebay Home">
+        <classes>
+
+            <!--<class name="search.SearchTest"/>-->
+            <!--<class name="searchItemTest.AdvancedSearchTest"></class>-->
+
+            <class name="creatAccountTest.TestRegistration"/>
+            <!--<class name="title.EbayHome"/>-->
+            <!--<class name="advancedSearch.TestLocationOption"/>-->
+            <!--<class name="advancedSearch.TestShowResults"/>-->
+            <!--<class name="advancedSearch.TestBuyingFormatsAndCondition"/>-->
+            <!--<class name="advancedSearch.TestSearchByCategory"/>-->
+            <!--<class name="advancedSearch.TestSearchItemByPrice"/>-->
+            <!--<class name="advancedSearch.TestSearchIncludingOptions"/>-->
+            <!--<class name="advancedSearch.AdvancedSearchUsingKeywords"/>-->
+            <!--<class name="logOut.TestLogOut"/>-->
+            <!--<class name="menu.MenuTest"/>-->
+            <!--<class name="logIn.TestLogIn"/>-->
+
+        </classes>
+    </test>
+
+
+</suite>

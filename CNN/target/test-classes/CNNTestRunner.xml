@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CapitalOne Automation Script " parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="Sierra"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserVersion" value="30.0"/>
+    <parameter name="url" value="https://www.cnn.com"/>
+
+    <test name = "CNN Home">
+        <classes>
+
+            <class name="testHomePage.TestBigTitles"></class>
+            <class name="testHomePage.TestTitle"></class>
+            <class name="testHomePage.TestHpWebElements"></class>
+            <class name="testHomePage.TestListOfWebElements"></class>
+            <class name="testMenu.TestCnnMenu"></class>
+        </classes>
+    </test>
+
+</suite>
