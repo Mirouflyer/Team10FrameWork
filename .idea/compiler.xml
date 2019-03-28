@@ -12,6 +12,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="BestBuy" target="1.8" />
+      <module name="CapitalOne" target="1.8" />
+      <module name="CNN" target="1.8" />
+      <module name="Ebay" target="1.8" />
       <module name="Walmart" target="1.8" />
     </bytecodeTargetLevel>
   </component>
