@@ -15,6 +15,6 @@ public class BestBuyHome extends CommonAPI {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         String tittle = driver.getTitle();
         System.out.println(tittle);
-       // Assert.assertEquals(tittle, "Electronics, Cars, Fashion, Collectibles, Coupons and More | eBay");
+        Assert.assertEquals(tittle, "Best Buy | Official Online Store | Shop Now & Save");
     }
 }
