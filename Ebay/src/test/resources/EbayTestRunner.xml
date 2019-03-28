@@ -15,14 +15,14 @@
         <classes>
 
             <!--<class name="search.SearchTest"/>-->
-            <!--<class name="searchItemTest.AdvancedSearchTest"></class>-->
+            <class name="searchItems.TestSearchItems"></class>
 
             <!--<class name="creatAccountTest.TestRegistration"/>-->
             <!--<class name="title.EbayHome"/>-->
             <!--<class name="advancedSearch.TestLocationOption"/>-->
             <!--<class name="advancedSearch.TestShowResults"/>-->
             <!--<class name="advancedSearch.TestBuyingFormatsAndCondition"/>-->
-            <class name="advancedSearch.TestSearchByCategory"/>
+            <!--<class name="advancedSearch.TestSearchByCategory"/>-->
             <!--<class name="advancedSearch.TestSearchItemByPrice"/>-->
             <!--<class name="advancedSearch.TestSearchIncludingOptions"/>-->
             <!--<class name="advancedSearch.AdvancedSearchUsingKeywords"/>-->
