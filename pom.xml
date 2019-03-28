@@ -12,6 +12,7 @@
         <module>Generic</module>
         <module>Ebay</module>
         <module>LinkedIn</module>
+        <module>bestBuy</module>
     </modules>
 
     <dependencyManagement>
