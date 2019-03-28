@@ -8,13 +8,22 @@
     <parameter name="os" value="OS X"/>
     <parameter name="os_version" value="Sierra"/>
     <parameter name="browserName" value="chrome"/>
-    <parameter name="browserVersion" value="30.0"/>
+    <parameter name="browserVersion" value="65.0"/>
     <parameter name="url" value="https://www.linkedin.com/"/>
 
     <test name = "LinkedIn Home">
         <classes>
-            <class name="homePageTitle.TestHomePageTitle"/>
-            <class name="homePageLinks.TestGeneralHomePageLinks"/>
+            <!--<class name="homePageTitle.TestHomePageTitle"/>-->
+            <!--<class name="homePage.TestGeneralLinks"/>          -->
+            <!--<class name="homePage.TestBusinessSolutionsLinks"/>-->
+            <!--<class name="homePage.TestBrowseLinkedInLinks"/>-->
+            <!--<class name="homePage.TestDirectoriesLinks"/>-->
+            <!--<class name="homePage.TestLinkedInC2109Links"/>-->
+            <class name="homePage.TestLinkedMemberDirectory"/>
+            <!--<class name="homePage.TestFindACollegue"/>-->
+            <!--<class name="homePage.TestForgetPassWordButton"/>-->
+            <!--<class name="homePage.TestLanguageSelection"/>-->
+
         </classes>
     </test>
 
