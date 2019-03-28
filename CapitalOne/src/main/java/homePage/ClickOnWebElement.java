@@ -75,8 +75,6 @@ public class ClickOnWebElement extends CommonAPI {
     public WebElement getPassWord(){
         return passWord;
     }
-
-
     public WebElement getPreQualified() {
         return preQualified;
     }
