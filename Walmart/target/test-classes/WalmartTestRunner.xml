@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Walmart Automation Script " parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="saucelabs"/>
+    <parameter name="os" value="OS X"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserVersion" value="65.0"/>
+    <parameter name="url" value="https://www.walmart.com/"/>
+
+    <test name = "Walmart Home">
+        <classes>
+        <!--<class name="homePageTitle.VerifyHomePageTitle"/>-->
+        <!--<class name="menuSearch.MenuListSearchTest"/>-->
+            <!--<class name="searchItems.TestSearchItemsFromDB"/>-->
+            <!--<class name="searchForOneItem.TestsearchOneItem"/>-->
+            <class name="searchItems.TestSearchItemsFromExcel"/>
+        </classes>
+    </test>
+
+</suite>
