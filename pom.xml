@@ -11,6 +11,7 @@
     <modules>
         <module>Generic</module>
         <module>Ebay</module>
+        <module>bestBuy</module>
     </modules>
 
     <dependencyManagement>
