@@ -6,14 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CapitalOne" />
-        <module name="CNN" />
+        <module name="BestBuy" />
+        <module name="Ebay" />
         <module name="Generic" />
+        <module name="LinkedIn" />
+        <module name="Walmart" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="LinkedIn" target="1.8" />
-      <module name="Walamrt" target="1.8" />
+      <module name="Walmart" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
