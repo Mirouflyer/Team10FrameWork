@@ -10,8 +10,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Generic</module>
-        <module>LinkedIn</module>
-        <module>Walmart</module>
+        <module>CapitalOne</module>
+        <module>CNN</module>
+        <module>Ebay</module>
+        <module>bestBuy</module>
     </modules>
 
     <dependencyManagement>
@@ -64,5 +66,6 @@
         </dependencies>
 
     </dependencyManagement>
+
 
 </project>
